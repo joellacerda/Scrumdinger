@@ -28,6 +28,7 @@
 		3CF10B352B321E0200B8F35D /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3CF10B342B321E0200B8F35D /* ding.wav */; };
 		3CF10B372B321E3400B8F35D /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF10B362B321E3400B8F35D /* AVPlayer+Ding.swift */; };
 		3CF10B392B32215C00B8F35D /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF10B382B32215C00B8F35D /* MeetingFooterView.swift */; };
+		3CF294192B507DBB0085C488 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF294182B507DBB0085C488 /* ScrumStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		3CF10B342B321E0200B8F35D /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		3CF10B362B321E3400B8F35D /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		3CF10B382B32215C00B8F35D /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
+		3CF294182B507DBB0085C488 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				3CF10B362B321E3400B8F35D /* AVPlayer+Ding.swift */,
 				3CBFBA322A6FE8A50013ACCB /* DailyScrum.swift */,
 				3CA12F912B4DDAEB00F63839 /* History.swift */,
+				3CF294182B507DBB0085C488 /* ScrumStore.swift */,
 				3CF10B312B321D3800B8F35D /* ScrumTimer.swift */,
 				3CBFBA302A6FE7DF0013ACCB /* Theme.swift */,
 			);
@@ -221,6 +224,7 @@
 				3CA12F902B4DD8A400F63839 /* DetailView.swift in Sources */,
 				3CF10B322B321D3800B8F35D /* ScrumTimer.swift in Sources */,
 				3CBFBA332A6FE8A50013ACCB /* DailyScrum.swift in Sources */,
+				3CF294192B507DBB0085C488 /* ScrumStore.swift in Sources */,
 				3CF10B372B321E3400B8F35D /* AVPlayer+Ding.swift in Sources */,
 				3CF10B392B32215C00B8F35D /* MeetingFooterView.swift in Sources */,
 				3CF10B2B2B32180D00B8F35D /* MeetingHeaderView.swift in Sources */,
