@@ -71,36 +71,29 @@
 			isa = PBXGroup;
 			children = (
 				3CBFBA342A6FE94C0013ACCB /* CardView.swift */,
-				3CBFBA382A6FF3460013ACCB /* ScrumsView.swift */,
-				3CA12F8A2B4DC10200F63839 /* NewScrumSheet.swift */,
-				3CA12F8F2B4DD8A400F63839 /* DetailView.swift */,
 				3CBFBA3C2A7286210013ACCB /* DetailEditView.swift */,
-				3C1F2F7A2A97BE2C004FC785 /* ThemeView.swift */,
-				3CF10B2A2B32180D00B8F35D /* MeetingHeaderView.swift */,
+				3CA12F8F2B4DD8A400F63839 /* DetailView.swift */,
 				3CF10B382B32215C00B8F35D /* MeetingFooterView.swift */,
+				3CF10B2A2B32180D00B8F35D /* MeetingHeaderView.swift */,
 				3CF10B282B3201A600B8F35D /* MeetingView.swift */,
+				3CA12F8A2B4DC10200F63839 /* NewScrumSheet.swift */,
+				3CF10B2E2B321B2900B8F35D /* ScrumProgressViewStyle.swift */,
+				3CBFBA382A6FF3460013ACCB /* ScrumsView.swift */,
+				3C1F2F7D2A99031E004FC785 /* ThemePicker.swift */,
+				3C1F2F7A2A97BE2C004FC785 /* ThemeView.swift */,
+				3CBFBA362A6FEDF20013ACCB /* TrailingIconLabelStyle.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		3CA12F8C2B4DC54D00F63839 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				3C1F2F7D2A99031E004FC785 /* ThemePicker.swift */,
-				3CBFBA362A6FEDF20013ACCB /* TrailingIconLabelStyle.swift */,
-				3CF10B2E2B321B2900B8F35D /* ScrumProgressViewStyle.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		3CBFBA2F2A6FE7CB0013ACCB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3CBFBA302A6FE7DF0013ACCB /* Theme.swift */,
-				3CBFBA322A6FE8A50013ACCB /* DailyScrum.swift */,
-				3CF10B312B321D3800B8F35D /* ScrumTimer.swift */,
 				3CF10B362B321E3400B8F35D /* AVPlayer+Ding.swift */,
+				3CBFBA322A6FE8A50013ACCB /* DailyScrum.swift */,
 				3CA12F912B4DDAEB00F63839 /* History.swift */,
+				3CF10B312B321D3800B8F35D /* ScrumTimer.swift */,
+				3CBFBA302A6FE7DF0013ACCB /* Theme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,7 +120,6 @@
 				3CE13F132A6D9DA000550339 /* ScrumdingerApp.swift */,
 				3C1F2F7C2A99019B004FC785 /* Views */,
 				3CBFBA2F2A6FE7CB0013ACCB /* Models */,
-				3CA12F8C2B4DC54D00F63839 /* Utils */,
 				3CF10B332B321DE200B8F35D /* Resources */,
 				3CE13F172A6D9DA400550339 /* Assets.xcassets */,
 				3CF10B302B321BF700B8F35D /* Scrumdinger.entitlements */,
