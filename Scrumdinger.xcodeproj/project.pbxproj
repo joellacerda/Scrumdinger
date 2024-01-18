@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1AE1DA2B5960A600D21836 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1AE1D92B5960A600D21836 /* ErrorWrapper.swift */; };
 		3C1F2F7B2A97BE2C004FC785 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F2F7A2A97BE2C004FC785 /* ThemeView.swift */; };
 		3C1F2F7E2A99031E004FC785 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F2F7D2A99031E004FC785 /* ThemePicker.swift */; };
 		3CA12F8B2B4DC10200F63839 /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA12F8A2B4DC10200F63839 /* NewScrumSheet.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C1AE1D92B5960A600D21836 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 		3C1F2F7A2A97BE2C004FC785 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		3C1F2F7D2A99031E004FC785 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		3CA12F8A2B4DC10200F63839 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				3CF294182B507DBB0085C488 /* ScrumStore.swift */,
 				3CF10B312B321D3800B8F35D /* ScrumTimer.swift */,
 				3CBFBA302A6FE7DF0013ACCB /* Theme.swift */,
+				3C1AE1D92B5960A600D21836 /* ErrorWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				3CBFBA332A6FE8A50013ACCB /* DailyScrum.swift in Sources */,
 				3CF294192B507DBB0085C488 /* ScrumStore.swift in Sources */,
 				3CF10B372B321E3400B8F35D /* AVPlayer+Ding.swift in Sources */,
+				3C1AE1DA2B5960A600D21836 /* ErrorWrapper.swift in Sources */,
 				3CF10B392B32215C00B8F35D /* MeetingFooterView.swift in Sources */,
 				3CF10B2B2B32180D00B8F35D /* MeetingHeaderView.swift in Sources */,
 				3CBFBA3D2A7286210013ACCB /* DetailEditView.swift in Sources */,
