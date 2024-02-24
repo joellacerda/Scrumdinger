@@ -1,9 +1,6 @@
-//
-//  MeetingHeaderView.swift
-//  Scrumdinger
-//
-//  Created by Joel Lacerda on 19/12/23.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
 
@@ -11,16 +8,14 @@ struct MeetingHeaderView: View {
     let secondsElapsed: Int
     let secondsRemaining: Int
     let theme: Theme
-    
+
     private var totalSeconds: Int {
         secondsElapsed + secondsRemaining
     }
-    
     private var progress: Double {
-       guard totalSeconds > 0 else { return 1 }
-       return Double(secondsElapsed) / Double(totalSeconds)
-   }
-    
+        guard totalSeconds > 0 else { return 1 }
+        return Double(secondsElapsed) / Double(totalSeconds)
+    }
     private var minutesRemaining: Int {
         secondsRemaining / 60
     }

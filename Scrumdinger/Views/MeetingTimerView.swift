@@ -1,9 +1,6 @@
-//
-//  MeetingTimerView.swift
-//  Scrumdinger
-//
-//  Created by Joel Lacerda on 18/01/24.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
 
@@ -27,7 +24,7 @@ struct MeetingTimerView: View {
                 .accessibilityElement(children: .combine)
                 .foregroundStyle(theme.accentColor)
             }
-            .overlay {
+            .overlay  {
                 ForEach(speakers) { speaker in
                     if speaker.isCompleted, let index = speakers.firstIndex(where: { $0.id == speaker.id }) {
                         SpeakerArc(speakerIndex: index, totalSpeakers: speakers.count)

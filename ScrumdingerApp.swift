@@ -1,9 +1,6 @@
-//
-//  ScrumdingerApp.swift
-//  Scrumdinger
-//
-//  Created by Joel Lacerda on 23/07/23.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
 
@@ -11,7 +8,7 @@ import SwiftUI
 struct ScrumdingerApp: App {
     @StateObject private var store = ScrumStore()
     @State private var errorWrapper: ErrorWrapper?
-    
+
     var body: some Scene {
         WindowGroup {
             ScrumsView(scrums: $store.scrums) {
@@ -19,7 +16,8 @@ struct ScrumdingerApp: App {
                     do {
                         try await store.save(scrums: store.scrums)
                     } catch {
-                        errorWrapper = ErrorWrapper(error: error, guidance: "Try again later.")
+                        errorWrapper = ErrorWrapper(error: error,
+                                                    guidance: "Try again later.")
                     }
                 }
             }
@@ -27,7 +25,8 @@ struct ScrumdingerApp: App {
                 do {
                     try await store.load()
                 } catch {
-                    errorWrapper = ErrorWrapper(error: error, guidance: "Scrumdinger will load sample data and continue.")
+                    errorWrapper = ErrorWrapper(error: error,
+                                                guidance: "Scrumdinger will load sample data and continue.")
                 }
             }
             .sheet(item: $errorWrapper) {

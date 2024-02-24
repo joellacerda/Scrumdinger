@@ -1,15 +1,12 @@
-//
-//  ThemeView.swift
-//  Scrumdinger
-//
-//  Created by Joel Lacerda on 24/08/23.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
 
-
 struct ThemeView: View {
     let theme: Theme
+    
     var body: some View {
         Text(theme.name)
             .padding(4)

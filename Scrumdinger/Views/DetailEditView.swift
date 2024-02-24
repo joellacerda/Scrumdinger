@@ -1,17 +1,13 @@
-//
-//  DetailEditView.swift
-//  Scrumdinger
-//
-//  Created by Joel Lacerda on 27/07/23.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
-
 
 struct DetailEditView: View {
     @Binding var scrum: DailyScrum
     @State private var newAttendeeName = ""
-    
+
     var body: some View {
         Form {
             Section(header: Text("Meeting Info")) {
@@ -36,10 +32,11 @@ struct DetailEditView: View {
                 }
                 HStack {
                     TextField("New Attendee", text: $newAttendeeName)
-                    Button(action: {withAnimation {
-                        let attendee = DailyScrum.Attendee(name: newAttendeeName)
-                        scrum.attendees.append(attendee)
-                        newAttendeeName = ""
+                    Button(action: {
+                        withAnimation {
+                            let attendee = DailyScrum.Attendee(name: newAttendeeName)
+                            scrum.attendees.append(attendee)
+                            newAttendeeName = ""
                         }
                     }) {
                         Image(systemName: "plus.circle.fill")
@@ -51,7 +48,6 @@ struct DetailEditView: View {
         }
     }
 }
-
 
 struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {

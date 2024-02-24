@@ -1,16 +1,13 @@
-//
-//  DetailView.swift
-//  Scrumdinger
-//
-//  Created by Joel Lacerda on 25/07/23.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
-    
+
 struct DetailView: View {
     @Binding var scrum: DailyScrum
-    
     @State private var editingScrum = DailyScrum.emptyScrum
+
     @State private var isPresentingEditView = false
     
     var body: some View {
@@ -19,7 +16,7 @@ struct DetailView: View {
                 NavigationLink(destination: MeetingView(scrum: $scrum)) {
                     Label("Start Meeting", systemImage: "timer")
                         .font(.headline)
-                    .foregroundColor(.accentColor)
+                        .foregroundColor(.accentColor)
                 }
                 HStack {
                     Label("Length", systemImage: "clock")
@@ -38,7 +35,7 @@ struct DetailView: View {
                 }
                 .accessibilityElement(children: .combine)
             }
-            Section (header: Text("Attendees")) {
+            Section(header: Text("Attendees")) {
                 ForEach(scrum.attendees) { attendee in
                     Label(attendee.name, systemImage: "person")
                 }
@@ -83,7 +80,7 @@ struct DetailView: View {
         }
     }
 }
-    
+
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
@@ -91,4 +88,3 @@ struct DetailView_Previews: PreviewProvider {
         }
     }
 }
-

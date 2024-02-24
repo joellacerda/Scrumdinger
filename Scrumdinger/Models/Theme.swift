@@ -1,13 +1,11 @@
-//
-//  Theme.swift
-//  Scrumdinger
-//
-//  Created by Joel Lacerda on 25/07/23.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
 
 enum Theme: String, CaseIterable, Identifiable, Codable {
+
     case bubblegum
     case buttercup
     case indigo
@@ -31,15 +29,12 @@ enum Theme: String, CaseIterable, Identifiable, Codable {
         case .indigo, .magenta, .navy, .oxblood, .purple: return .white
         }
     }
-    
     var mainColor: Color {
         Color(rawValue)
     }
-    
     var name: String {
         rawValue.capitalized
     }
-    
     var id: String {
         name
     }

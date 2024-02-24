@@ -1,9 +1,6 @@
-//
-//  NewScrumSheet.swift
-//  Scrumdinger
-//
-//  Created by Joel Lacerda on 09/01/24.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
 
@@ -32,7 +29,8 @@ struct NewScrumSheet: View {
     }
 }
 
-#Preview {
-    NewScrumSheet(scrums: .constant(DailyScrum.sampleData),
-                  isPresentingNewScrumView: .constant(true))
+struct NewScrumSheet_Previews: PreviewProvider {
+    static var previews: some View {
+        NewScrumSheet(scrums: .constant(DailyScrum.sampleData), isPresentingNewScrumView: .constant(true))
+    }
 }

@@ -1,9 +1,6 @@
-//
-//  AVPlayer+Ding.swift
-//  Scrumdinger
-//
-//  Created by Joel Lacerda on 19/12/23.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+*/
 
 import Foundation
 import AVFoundation
@@ -14,4 +11,3 @@ extension AVPlayer {
         return AVPlayer(url: url)
     }()
 }
-

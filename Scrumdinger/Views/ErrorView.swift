@@ -1,9 +1,6 @@
-//
-//  ErrorView.swift
-//  Scrumdinger
-//
-//  Created by Joel Lacerda on 18/01/24.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
 
@@ -26,9 +23,9 @@ struct ErrorView: View {
             }
             .padding()
             .background(.ultraThinMaterial)
-            .clipShape(RoundedRectangle(cornerRadius: 16))
+            .cornerRadius(16)
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Dismiss") {
                         dismiss()
                     }
@@ -44,8 +41,10 @@ struct ErrorView_Previews: PreviewProvider {
     }
     
     static var wrapper: ErrorWrapper {
-        ErrorWrapper(error: SampleError.errorRequired, guidance: "You can safely ignore this error.")
+        ErrorWrapper(error: SampleError.errorRequired,
+                     guidance: "You can safely ignore this error.")
     }
+    
     static var previews: some View {
         ErrorView(errorWrapper: wrapper)
     }
